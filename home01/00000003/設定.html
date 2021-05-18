@@ -1,0 +1,124 @@
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="utf-8"><!--編碼-->
+		<link rel="icon" href="../../image/logo.ico" type="image/黑暗堅果.ico"><!--商標-->
+		</link>
+		<!--標題-->
+		<title>
+			堅果網誌｜成員介紹
+		</title>
+		<link href="../../css/堅果網誌.css" rel="stylesheet" type="text/css"><!--排版(外部css)-->
+	</head>
+	<body id="canvas_div_no_cursor"><!--id用於隱藏游標-->
+		<div class="back" title="上一頁" onclick="history.go(-1)"><!--上一頁-->
+		</div>
+		<div class="next" title="下一頁" onclick="history.go(1)"><!--下一頁-->
+		</div>
+		<div class="refresh" title="重新整理" onclick="window.location.reload()"><!--重新整理-->
+		</div>
+        <div class="title00"><!--上方標題欄-->
+			<center><!--置中-->
+				<a class="title0" href="../../堅果網誌.html" title="傳送回首頁">
+					堅果網誌&nbsp;&nbsp;
+				</a>
+				<a>
+					&nbsp;
+				</a>
+				<a href="../../post01/post.html" class="post01" title="傳送到文章">
+					文章
+				</a>
+				<a>
+					&nbsp;
+				</a>
+				<a href="../../image01/image.html" class="image01" title="傳送到圖片">
+					圖片
+				</a>
+				<a>
+					&nbsp;
+				</a>
+				<a href="../../music01/music.html" class="music01" title="傳送到音樂">
+					音樂
+				</a>
+				<a>
+					&nbsp;
+				</a>
+				<a href="../../video01/video.html" class="video01" title="傳送到影片">
+					&nbsp;影片
+				</a>
+				<a>
+					&nbsp;
+				</a>
+				<a href="../../tool01/tool.html" class="tool01" title="傳送到工具">
+					工具
+				</a>
+				<a>
+					&nbsp;
+				</a>
+				<a href="../../game01/game.html" class="game01" title="傳送到遊戲">
+					&nbsp;遊戲
+				</a>
+			</center>
+		</div>
+		<div>
+			<br>
+			<br>
+		</div>
+		<article>
+			<h2>設定</h2>
+			<h3>底圖：</h3>
+			<script>
+document.body.background=get_cookie("background")
+function get_cookie(name) {
+    search=name + "="
+    if (document.cookie.length > 0) {
+        offset = document.cookie.indexOf(search)
+        if (offset >= 0) {
+            offset += search.length
+            end = document.cookie.indexOf(";", offset)
+            if (end == -1) end=document.cookie.length
+            return unescape(document.cookie.substring(offset, end))
+       }
+   }
+   return null
+}
+
+function setbgw() {
+      choice=document.back.selectedIndex
+      new_bg="https://lh3.googleusercontent.com/FzyTyHqS6QrVFFiJjH2x0YLylMHIoEomvABECGaWJmFQdCpK20TTE1tToMOE4AZufWsZVrg7wbyWS_jFwr_zJ96vNzQiUCtK6el6n0wXy8xOtLEmIuWwiRx8BYLrABN-FkXEoADn5uPq5as5UC04ApZyPfy-SjWyDB6agpsCJ2H-h3QlOLwV_xu5cXyYFt4Z-LHmyPi-lzrii1qUbfs7IDoaXd7q-rPcmQe19JIQGPlsJAr9_naDHAJLme-K-nGIkVGVSuBAa_rog8DLgUph65ZJ7EWmI2J71vtG-pjIiSxQgrJAV55Gp41rEX2L_dF5TrQTPLrC5ewLXB2ANeUL-4_FJGr7fgJSQSsSW8H1Yy9_H1olfZmqe_2o48c-K0h3k8tq0hSwPgUNpDggFannga0wc_uzWsfgS6-CXibGNVGqMMFSZwzL7Cs9lxLog0gRQqBFE4UU-U1mX9O--tqfoCHTHff6JweYFbzIqv5HPGROE-M74B_Aj8-Soue7BVPpcGbBGGUEF6aOhWbMTobOtcV5eLM6GOnUOH910ys_bGUqFxZo1IsqYelM7jphznsbKdk_AaV1RX6oUneMqVkZUlAigW7oN88om18PJM4Miqq9iod5JHDYYZCQnifFOHeww39SRWiFO2MzIEUs94kQ2RNdqvNJYatHkgfsidCUlgN5Cy-TQq4nE0CimjdB-w=w512-h384-no?authuser=0"
+      document.bgColor=new_bg
+      document.cookie="background=" + new_bg
+      document.body.background=get_cookie("background")
+}
+
+function setbg_white() {
+      choice=document.back.selectedIndex
+      new_bg="https://lh3.googleusercontent.com/dyxjD0-lRmMfpZR69V7S8Z0LoUaAo5QiHoKn5l06Y-gYdI8rZcJbwUVGvphaK556zOK1gJuVknjZlpRH62XaH2ZpKQHcY2ab57rDwi11f2jAPZLRpxcWwCKA1wgj9Tz23MKQx8E7uUu-Dhg0qoMYjAFTyXJpYMCm5VnCdj2AppJJVL6xQ17I3XHWLN7mKXgPFWyMfGVKCmMDovdh7uytKD2PSp7OVHiLRvoaAhlVZZiUj7NeoX6JiUobaHZOzwRO6r6_2SH4-aHzIccQc_huMPGf_TM_UGnoBwNJOBUQfbd6X0vOK75aVpfItuJuP8i_SqfwVNc5vOOPKaRCvG7k0UVFG0qsNZ9B4u5Gr1IdJ6GkG4xohA_h9BnoPS9tOWk9IDTUrS20HtGVFKbJd3pN1sFxPiYr49GLwyQn-vTizdmnqxG4Jw5mmiAKbW4lS5-yP8IlAME6dJC5qN1WgJoiBiNEwTzCZnhd5KNYbwEJjGyWB4fATHsgqj2OYvqGauH5omU0B9Me2o9dpMRyiPbsCKPciKOQ-DejB114KFVqrD-HeTi3OjcppzsxbDuSCLWLZr9psbQ5MI7MgzSrAHnQ4M4ynCW97VYJlrWtdpkhTYx_DZDtqZnQSAI0NCJhAnrcEiomxrwaaSor5v7zME22L191DuTF4rJzQCy9NZ3kf49-PK3iurxdcGrzk9HU=w108-h104-no?authuser=0"
+      document.bgColor=new_bg
+      document.cookie="background=" + new_bg
+      document.body.background=get_cookie("background")
+}
+
+function setbg2() {
+      choice=document.back.selectedIndex
+      new_bg="https://lh3.googleusercontent.com/eNxi7x4HEfuoLa8yFKh1Is2HJ7oeTgVCLVwhgAK0ssB8kLb4Kdn3tOp9HiHjmO9khGNHV1UTGGdn-5rOonbJqsjrKxwtLNt8UewZJPf6OXaTkjNV8RSG2K3asLgQhp4X1UgfSxxPwdYe5lgpCLG7-2YkswXqjyxubrXqEgUw6ZY4SHThjOQ1SigN8olKmFdBefh75xNOODbEAxht_u5SGT0qWzqlPeC8GeWypwXIw2tKgseg5jm3wcjR3kUp91nkdfPj3jwnZD-5WW-o7E4W15HoqAXDT8IMVvK9B647FzLSzom7MGwNYcCw4csjR8FF5YvZKOLf7qQ7ZASECj1MsluR-L9Pcr9q84GEHWFqUOFa_LqnS4yjBdOu4NMRePwGoHjK6vbnuyRI3jVsVITktZenMNIy688eAm1IusPpu1zyJ1UtDG7B1eSP1D-uFC5PW4JIHu4YbYTOc1Ktoz6r3pefbszyY_-Qdhqpd6nxXObxNG6nrUaEvZb9suSvgmlZWcx3LG9Bs6Fs5XumUjqN3WvGnUHLQChnPxT1aOHUqLq5KI3mhNnGL4iweItBNHC3fIR3xGYGDG4_QyzMqTmcRIobbk7WsG9XEVbkWEho9bMCPF75zK1EkkWAmc7xkzkJDPoHbfG0VKx9fH9pHZ4ffrTfGDeG5maXdJQBg0IVS7GoKagqchYh191sbGYniw=w46-h44-no?authuser=0"
+      document.bgColor=new_bg
+      document.cookie="background=" + new_bg
+      document.body.background=get_cookie("background")
+}
+</script>
+<form name="back">
+<input type="button" onclick="setbgw()" style="background-image:url(https://lh3.googleusercontent.com/FzyTyHqS6QrVFFiJjH2x0YLylMHIoEomvABECGaWJmFQdCpK20TTE1tToMOE4AZufWsZVrg7wbyWS_jFwr_zJ96vNzQiUCtK6el6n0wXy8xOtLEmIuWwiRx8BYLrABN-FkXEoADn5uPq5as5UC04ApZyPfy-SjWyDB6agpsCJ2H-h3QlOLwV_xu5cXyYFt4Z-LHmyPi-lzrii1qUbfs7IDoaXd7q-rPcmQe19JIQGPlsJAr9_naDHAJLme-K-nGIkVGVSuBAa_rog8DLgUph65ZJ7EWmI2J71vtG-pjIiSxQgrJAV55Gp41rEX2L_dF5TrQTPLrC5ewLXB2ANeUL-4_FJGr7fgJSQSsSW8H1Yy9_H1olfZmqe_2o48c-K0h3k8tq0hSwPgUNpDggFannga0wc_uzWsfgS6-CXibGNVGqMMFSZwzL7Cs9lxLog0gRQqBFE4UU-U1mX9O--tqfoCHTHff6JweYFbzIqv5HPGROE-M74B_Aj8-Soue7BVPpcGbBGGUEF6aOhWbMTobOtcV5eLM6GOnUOH910ys_bGUqFxZo1IsqYelM7jphznsbKdk_AaV1RX6oUneMqVkZUlAigW7oN88om18PJM4Miqq9iod5JHDYYZCQnifFOHeww39SRWiFO2MzIEUs94kQ2RNdqvNJYatHkgfsidCUlgN5Cy-TQq4nE0CimjdB-w=w512-h384-no?authuser=0); width:20px; height:20px;" />
+
+<input type="button" onclick="setbg_white()" style="background-image:url(https://lh3.googleusercontent.com/dyxjD0-lRmMfpZR69V7S8Z0LoUaAo5QiHoKn5l06Y-gYdI8rZcJbwUVGvphaK556zOK1gJuVknjZlpRH62XaH2ZpKQHcY2ab57rDwi11f2jAPZLRpxcWwCKA1wgj9Tz23MKQx8E7uUu-Dhg0qoMYjAFTyXJpYMCm5VnCdj2AppJJVL6xQ17I3XHWLN7mKXgPFWyMfGVKCmMDovdh7uytKD2PSp7OVHiLRvoaAhlVZZiUj7NeoX6JiUobaHZOzwRO6r6_2SH4-aHzIccQc_huMPGf_TM_UGnoBwNJOBUQfbd6X0vOK75aVpfItuJuP8i_SqfwVNc5vOOPKaRCvG7k0UVFG0qsNZ9B4u5Gr1IdJ6GkG4xohA_h9BnoPS9tOWk9IDTUrS20HtGVFKbJd3pN1sFxPiYr49GLwyQn-vTizdmnqxG4Jw5mmiAKbW4lS5-yP8IlAME6dJC5qN1WgJoiBiNEwTzCZnhd5KNYbwEJjGyWB4fATHsgqj2OYvqGauH5omU0B9Me2o9dpMRyiPbsCKPciKOQ-DejB114KFVqrD-HeTi3OjcppzsxbDuSCLWLZr9psbQ5MI7MgzSrAHnQ4M4ynCW97VYJlrWtdpkhTYx_DZDtqZnQSAI0NCJhAnrcEiomxrwaaSor5v7zME22L191DuTF4rJzQCy9NZ3kf49-PK3iurxdcGrzk9HU=w108-h104-no?authuser=0); width:20px; height:20px;" />
+
+<input type="button" onclick="setbg2()" style="background-image:url(https://lh3.googleusercontent.com/eNxi7x4HEfuoLa8yFKh1Is2HJ7oeTgVCLVwhgAK0ssB8kLb4Kdn3tOp9HiHjmO9khGNHV1UTGGdn-5rOonbJqsjrKxwtLNt8UewZJPf6OXaTkjNV8RSG2K3asLgQhp4X1UgfSxxPwdYe5lgpCLG7-2YkswXqjyxubrXqEgUw6ZY4SHThjOQ1SigN8olKmFdBefh75xNOODbEAxht_u5SGT0qWzqlPeC8GeWypwXIw2tKgseg5jm3wcjR3kUp91nkdfPj3jwnZD-5WW-o7E4W15HoqAXDT8IMVvK9B647FzLSzom7MGwNYcCw4csjR8FF5YvZKOLf7qQ7ZASECj1MsluR-L9Pcr9q84GEHWFqUOFa_LqnS4yjBdOu4NMRePwGoHjK6vbnuyRI3jVsVITktZenMNIy688eAm1IusPpu1zyJ1UtDG7B1eSP1D-uFC5PW4JIHu4YbYTOc1Ktoz6r3pefbszyY_-Qdhqpd6nxXObxNG6nrUaEvZb9suSvgmlZWcx3LG9Bs6Fs5XumUjqN3WvGnUHLQChnPxT1aOHUqLq5KI3mhNnGL4iweItBNHC3fIR3xGYGDG4_QyzMqTmcRIobbk7WsG9XEVbkWEho9bMCPF75zK1EkkWAmc7xkzkJDPoHbfG0VKx9fH9pHZ4ffrTfGDeG5maXdJQBg0IVS7GoKagqchYh191sbGYniw=w46-h44-no?authuser=0); width:20px; height:20px;" />
+
+</form>
+		</article>
+		<div class="signature" title="傳送到暗黑堅果臉書粉絲專頁" href="https://www.facebook.com/%E6%9A%97%E9%BB%91%E5%A0%85%E6%9E%9C-116935436375829"><!--右下臉書連結-->
+		</div>
+		<img src="../../image/cursor.svg" id="im"/><!--堅果圖示(跟隨游標)-->
+    </body>
+</html>
+<script type="text/javascript" src="../../js/堅果網誌.js">//學不會的東西(外部js)
+</script>

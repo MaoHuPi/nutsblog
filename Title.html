@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="../css/reset.css"/>
+    <style>
+        body{
+            height: 3000px;
+            width: 2000px;
+        }
+        img{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<img src="../images1/huaji.png" id="im"/>
+<script>
+    var evt = {
+        //相容性程式碼，谷歌火狐支援事件處理事件event
+        //ie支援window.event
+        getEvent:function (event) {
+            return window.event || event;
+        },
+        //獲取可視區域的橫座標值
+        getClientX:function (event) {
+            return this.getEvent(event).clientX;
+        },
+        //獲取可視區域的縱座標值
+        getClientY:function (event) {
+            return this.getEvent(event).clientY;
+        },
+        //頁面向左捲曲出去的距離
+        getScrollLeft:function () {
+            return document.body.scrollLeft||window.pageXOffset||document.documentElement.scrollLeft||0;
+        },
+        //頁面向上捲曲出去的距離
+        getScrollTop:function () {
+            return document.body.scrollTop||window.pageYOffset||document.documentElement.scrollTop||0;
+        },
+        //相對於頁面的橫座標(pageX(window.event是不支援這個屬性的)或者是clientX+scrollLeft)
+        getPageX:function (event) {
+          return this.getEvent(event).pageX?this.getEvent(event).pageX:this.getClientX(event)+this.getScrollLeft();
+        },
+        //相對於頁面的縱座標(pageY(window.event是不支援這個屬性的)或者是clientY+scrollTop)
+        getPageY:function (event) {
+            return this.getEvent(event).pageY?this.getEvent(event).pageY:this.getClientY(event)+this.getScrollTop();
+        }
+    };
+    document.onmousemove=function (e) {
+      document.getElementById("im").style.left = evt.getPageX(e)+"px";
+      document.getElementById("im").style.top = evt.getPageY(e)+"px";
+    };
+</script>
+</body>
+</html>
